@@ -6,5 +6,4 @@ We study the Erdős–Rényi (ER) graph conditioned on the rare event that every
 
 The file `rcg.py` implements the main functions while `figures.py` generates the figures. The community detection experiment requires the [Hyperspherical Community Detection](https://github.com/MartijnGosgens/hyperspherical_community_detection) repository to be available in the same directory.
 
-
-
+The file `verification.py` performs numerical experiments to verify the asymptotic results from the paper. It compares the exact values of the mean and variance of the statistics to their saddle point estimates, and compares these saddle point estimates to their asymptotes. This script was generated using Claude.

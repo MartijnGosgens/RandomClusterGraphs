@@ -115,7 +115,7 @@ def variance_p_half(n,bells=None):
     if bells is None:
         bells = bell_generalized_list(n)
     N=math.comb(n,2)
-    return N**2 * (bells[n-1]/bells[n]) * (bells[n-2]/bells[n-1] - bells[n-1]/bells[n])+ N * (bells[n-1]/bells[n]) * (1-bells[n-1]/bells[n])
+    return N**2 * (bells[n-1]/bells[n]) * (bells[n-2]/bells[n-1] - bells[n-1]/bells[n])+ N * (bells[n-1]/bells[n] - bells[n-2]/bells[n])
     
 # We use Newton-Raphson iteration to find the value of t for which B_n(e^t)==target.
 def B_inverse_nr(n,target,tolerance=1/1000):
